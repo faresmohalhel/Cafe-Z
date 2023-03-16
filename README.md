@@ -2,4 +2,14 @@
 
 a webpage for a cafe called Z
 
-<!-- dont forget to update the readme file after finishing styling -->
+## live website
+
+[live website](https://faresmohalhel.github.io/faresmohalhel/cafe-z)
+
+## technologies used in this project
+
+- html
+- css
+- javascript
+- tailwindcss
+- git and github
