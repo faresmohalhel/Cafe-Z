@@ -1,19 +1,28 @@
 const userName = prompt("Enter your name!");
-let userGender = prompt("Enter your gender!").toLowerCase();
-let userInfo = [];
-
-while (userGender !== "male" && userGender !== "female") {
-  userGender = prompt("Please Enter your gender correctly.").toLowerCase();
-}
-
 const welcomeMessage = "Welcome to Cafe Z";
+let userInfo = [];
+let userGender = userGenderFunction();
 
-if (userGender === "male") {
-  alert(welcomeMessage + ",Mr " + userName);
-} else if (userGender === "female") {
-  alert(welcomeMessage + ",Ms " + userGender);
-} else {
-  alert(welcomeMessage);
+// while (userGender !== "male" && userGender !== "female") {
+//   userGender = prompt("Please Enter your gender correctly.").toLowerCase();
+// }
+
+function userGenderFunction() {
+  let userInput = prompt("Enter your gender").toLowerCase();
+
+  while (userInput !== "male" && userInput !== "female") {
+    userInput = prompt("Please Enter your gender correctly.").toLowerCase();
+  }
+
+  if (userInput === "male") {
+    alert(welcomeMessage + " Mr " + userName);
+  } else if (userInput === "female") {
+    alert(welcomeMessage + " Ms " + userInput);
+  } else {
+    alert(welcomeMessage);
+  }
+
+  return userInput;
 }
 
 const userDrinkType = prompt("Would you like a hot or a cold drink?");
