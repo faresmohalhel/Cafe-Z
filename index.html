@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js"></script>
+    <script defer src="./app.js"></script>
     <title>Cafe Z</title>
   </head>
   <body class="background-pattern">
@@ -58,12 +58,16 @@
         </div>
       </nav>
     </header>
-    <main class="container shadow-lg max-h-min mx-auto bg-white">
+    <main class="container shadow-lg max-h-min mx-auto bg-white relative">
       <img
         class="p-8 w-full h-3/4"
         src="./img/nathan-dumlao-6VhPY27jdps-unsplash.jpg"
         alt="a cafe image"
       />
+      <div
+        id="user-input"
+        class="absolute bg-neutral-200 bottom-1/2 translate-y-1/2 left-1/2 translate-x-[-50%] w-1/4 h-3/4 opacity-80"
+      ></div>
     </main>
   </body>
 </html>
