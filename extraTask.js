@@ -135,3 +135,53 @@ for (let i = 0; i <= question13number1; i++) {
   sum2 += i;
 }
 alert(sum2 / question13number1);
+
+// //******************** DOM extra task *************************** */
+
+// **test
+// q1
+const isPresent = function (array, value) {
+  if (array.includes(value)) return value;
+  else return -1;
+};
+
+// q2
+const findMissingNumber = function (array) {
+  array.sort((a, b) => a - b);
+  return (
+    array.filter((value, index) => {
+      if (index === array.length - 1) {
+        return false;
+      }
+      if (value + 1 !== array[index + 1]) return value;
+    })[0] + 1
+  );
+};
+
+// ** alt answer for q2
+const findMissingNumberAltAnswer = function (array) {
+  array.sort((a, b) => a - b);
+  let answer;
+  for (let i = 0; i < array.length; i++) {
+    if (i === array.length) continue;
+    if (array[i] + 1 !== array[i + 1]) {
+      console.log(array[i], array[i + 1]);
+      answer = array[i] + 1;
+      return answer;
+    }
+  }
+};
+
+// q3
+const removeDuplicates = function (array) {
+  return Array.from(new Set(Array));
+};
+
+// q4
+const avg = function (array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum / array.length;
+};
