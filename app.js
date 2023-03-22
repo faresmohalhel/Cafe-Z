@@ -15,9 +15,37 @@ orderForm.addEventListener("submit", (e) => {
   // console.log(e.target.age.value);
   userOrder[0] = e.target.username.value;
   userOrder[1] = e.target.age.value;
-  if (e.target.coldDrink.checked === true) userOrder[2] = "cold";
-  else userOrder[2] = "hot";
   userOrder[3] = e.target.drink.value;
+  if (
+    e.target.hotDrink.checked === true &&
+    e.target.coldDrink.checked === false
+  ) {
+    userOrder[2] = "hot";
+    console.log(userOrder);
+
+    console.log(e.target.coldDrink.checked, e.target.hotDrink.checked);
+  } else if (
+    e.target.hotDrink.checked === false &&
+    e.target.coldDrink.checked === true
+  ) {
+    userOrder[2] = "cold";
+    console.log(userOrder);
+
+    console.log(e.target.coldDrink.checked, e.target.hotDrink.checked);
+  } else if (
+    e.target.hotDrink.checked === true &&
+    e.target.coldDrink.checked === true
+  ) {
+    userOrder[2] = "hot and cold";
+    console.log(userOrder);
+    console.log(e.target.coldDrink.checked, e.target.hotDrink.checked);
+  } else {
+    userOrder[2] = "please select and reorder";
+    console.log(userOrder);
+
+    console.log(e.target.coldDrink.checked, e.target.hotDrink.checked);
+  }
+  console.log(userOrder[2]);
 
   renderOrder(userOrder);
 });
