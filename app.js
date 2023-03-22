@@ -89,5 +89,5 @@ orderForm.addEventListener("submit", (e) => {
 // userStatsContainer.appendChild(userStatsItemAge);
 // userStatsContainer.appendChild(userStatsItemGender);
 // userStatsContainer.appendChild(userStatsItemDrink);
-
+//userInputMainContainer.appendChild(userInputContainer);
 // userInputMainContainer.appendChild(userInputContainer);
