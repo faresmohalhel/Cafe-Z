@@ -66,8 +66,65 @@
       />
       <div
         id="user-input"
-        class="absolute bg-neutral-200 bottom-1/2 translate-y-1/2 left-1/2 translate-x-[-50%] w-1/4 h-3/4 opacity-80"
-      ></div>
+        class="absolute flex flex-col gap-6 bg-gray-50 bottom-1/2 translate-y-1/2 left-1/2 translate-x-[-50%] w-1/4 h-3/4 rounded-lg drop-shadow-md py-6"
+      >
+        <h2 class="text-center">Order your drink</h2>
+        <form action="" class="p-10 flex flex-col gap-6" id="order-form">
+          <div class="flex flex-col-reverse gap-1">
+            <input
+              class="w-3/4 bg-white pl-1 pb-1 border border-gray-500 rounded-md"
+              type="text"
+              name="username"
+              placeholder="username"
+              id="username-input"
+            />
+            <label class="" for="username">Username</label>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <input
+              class="w-3/4 bg-white pl-1 pb-1 border border-gray-500 rounded-md"
+              type="text"
+              name="age"
+              placeholder="age"
+              id="age-input"
+            />
+            <label class="" for="age">Age</label>
+          </div>
+          <fieldset class="flex flex-col gap-6">
+            <div class="flex flex-col-reverse gap-1">
+              <input
+                class="w-3/4 bg-white pl-1 pb-1 border border-gray-500 rounded-md"
+                type="text"
+                name="drink"
+                placeholder="drink"
+                id="drink-input"
+              />
+              <label class="" for="drink">Drink name</label>
+            </div>
+            <div>
+              <div>
+                <input type="checkbox" name="coldDrink" id="coldDrink" />
+                <label for="coldDrink">cold</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hotDrink" checked id="hotDrink" />
+                <label for="hotDrink">hot</label>
+              </div>
+            </div>
+          </fieldset>
+          <button
+            class="bg-white w-fit self-center p-3 rounded-md drop-shadow-md hover:bg-gray-50 duration-200"
+            type="submit"
+          >
+            Order Now
+          </button>
+        </form>
+
+        <div
+          id="order-container"
+          class="w-3/4 h-fit border border-gray-400 rounded-md self-center bg-white flex flex-col items-center p-3"
+        ></div>
+      </div>
     </main>
   </body>
 </html>

@@ -186,4 +186,4 @@ setTimeout(() => {
     }
     return sum / array.length;
   };
-}, 500);
+}, 1000);
