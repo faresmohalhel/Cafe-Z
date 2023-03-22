@@ -65,3 +65,5 @@ userStatsContainer.appendChild(userStatsItemGender);
 userStatsContainer.appendChild(userStatsItemDrink);
 
 userInputMainContainer.appendChild(userInputContainer);
+
+//
