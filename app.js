@@ -22,6 +22,7 @@ orderForm.addEventListener("submit", (e) => {
   renderOrder(userOrder);
 });
 
+//
 // ******************************* //
 // const userName = prompt("Enter your name!");
 // const userAge = prompt("Enter your age!");
