@@ -15,7 +15,7 @@ orderForm.addEventListener("submit", (e) => {
   // console.log(e.target.age.value);
   userOrder[0] = e.target.username.value;
   userOrder[1] = e.target.age.value;
-  if (e.target.coldDrink.value === "on") userOrder[2] = "cold";
+  if (e.target.coldDrink.checked === true) userOrder[2] = "cold";
   else userOrder[2] = "hot";
   userOrder[3] = e.target.drink.value;
 
